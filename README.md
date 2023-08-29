@@ -27,7 +27,15 @@ down to the components that need it.
 Have a look at the components below and draw out a component hierarchy so you
 can determine how to pass data down as props.
 
-### Header
+
+               app
+|         |                 |                 |
+header   about              article list    Article
+  (h1)    (img)(aside) (<p>)  (main)        (<h3>) (article(small) (p))
+
+
+
+  ### Header
 
 Make a `Header` component as a child of `App`. It should return:
 
